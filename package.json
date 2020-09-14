@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev:start-ssr": "nodemon server/index.js",
-    "prod:start-ssr": "node server/index.js"
+    "prod:start-ssr": "node server/index.js",
+    "post-install": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
