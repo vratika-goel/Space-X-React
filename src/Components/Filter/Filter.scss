@@ -9,8 +9,20 @@
   }
 }
 
-@media screen and (min-width: 451px) and (max-width: 768px) {
+@media screen and (min-width: 1000px) and (max-width: 1162px) { 
+  .space-x-filter {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   .space-x-filter {
     width: 175px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .space-x-filter {
+    width: 180px;
   }
 }
