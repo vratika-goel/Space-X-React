@@ -18,11 +18,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "dev:start-ssr": "nodemon server/index.js",
-    "prod:start-ssr": "node server/index.js",
-    "post-install": "react-scripts build"
+    "postinstall": "npm run build",
+    "dev:start-ssr": "node server/index.js",
+    "prod": "node server/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
