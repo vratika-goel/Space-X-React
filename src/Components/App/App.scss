@@ -1,0 +1,59 @@
+.space-x-container {
+  max-width: 1140px;
+  &_wrapper {
+    &_filters {
+      padding-left: 0;
+    }
+    &_no-data,
+    &_loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+    }
+  }
+  &_footer {
+    position: fixed;
+    width: 100%;
+    color: #333333;
+    background: #dddddd;
+    bottom: 0;
+    p {
+      font-weight: bold;
+      margin: 5px auto;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .space-x-container {
+    &_wrapper {
+      &_cards {
+        padding-left: 70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .space-x-container {
+    padding-left: 0;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 0;
+    &_wrapper {
+      &_filters {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      &_cards {
+        margin: auto;
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.space-x-card {
+  height: 375px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  &_media {
+    text-align: center;
+    background: #dddddd;
+    &_img {
+      max-width: 100%;
+    }
+  }
+
+  &_content {
+    font-size: 12px;
+    padding: 1rem 0 0 0;
+
+    &_name {
+      font-weight: bolder;
+      color: #006eb3;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+
+    &_mission-ids {
+      &_text {
+        font-weight: bolder;
+        color: #000000;
+        margin-bottom: 0px;
+      }
+      &_list {
+          padding-left: 20px;
+          margin-bottom: 0;
+      }
+    }
+
+    &_launch-year {
+      &_text {
+        font-weight: bolder;
+        color: #000000;
+        margin-right: 2px;
+      }
+    }
+
+    &_successful-launch {
+      &_text {
+        font-weight: bolder;
+        color: #000000;
+        margin-right: 2px;
+      }
+    }
+
+    &_successful-landing {
+      &_text {
+        font-weight: bolder;
+        color: #000000;
+        margin-right: 2px;
+      }
+    }
+
+    &_name, &_mission-ids, &_launch-year, &_successful-launch {
+        margin-bottom: 5px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .space-x-card {      
+    height: auto;
+  }
+}

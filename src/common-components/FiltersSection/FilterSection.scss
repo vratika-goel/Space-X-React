@@ -1,0 +1,83 @@
+// Large Desktop (1200px and above)
+
+.space-x-filter {
+  &_body {
+    padding: 0px 15px;
+
+    &_launch-year {
+      &_filter-text {
+        font-size: 13px;
+        border-bottom: 1px solid #ebcfcf;
+        margin-bottom: 10px;
+      }
+
+      &_btn-text {
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        font-size: 11px;
+        max-width: min-content;
+        padding: 5px 21px;
+        margin-right: 1%;
+        &:nth-child(even) {
+          margin-left: 1%;
+        }
+      }
+
+      &_launch-year,
+      &_success-launch,
+      &_success-landing {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #006400;
+}
+
+success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus,
+.btn-success:focus,
+.btn-success.focus {
+  box-shadow: none;
+}
+
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:focus {
+  background-color: #28a745;
+    border-color: #28a745;
+}
+
+// Mobile screen
+
+@media screen and (max-width: 450px) {
+  .space-x-filter {
+    margin-bottom: 10px;
+    &_header {
+      &_title {
+        font-size: 1.5rem;
+      }
+    }
+    &_body {
+      &_launch-year {
+        &_filter-text {
+          width: auto;
+          font-size: 20px;
+        }
+        &_btn-text {
+          font-size: 1rem;
+          padding: 0px 50px;
+          max-width: 100%;
+          &:nth-child(odd) {
+            // margin-right: 50px;
+            float: right;
+          }
+          &:nth-child(even) {
+            // margin-right: 100px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.space-x-cards {
+  display: flex;
+  width: 100%;
+  &_details {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .space-x-cards {
+    margin-left: 0;
+    &_details {
+      min-width: 220px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .space-x-cards {
+    margin-left: 0;
+    &_details {
+      padding-left: 0;
+      min-width: 350px;
+    }
+  }
+}
