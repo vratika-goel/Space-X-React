@@ -36,7 +36,7 @@ const App = (props) => {
           setIsLoading(false);
           setMissionData(data);
         })
-        .catch((error) => {});
+        .catch((error) => { });
     }
   }, [page, updatedUrl]);
 
@@ -55,20 +55,20 @@ const App = (props) => {
         <aside className="col-lg-2 col-md-2 col-sm-12 space-x-container_wrapper_filters">
           <Filter setFilter={getFilterObj} filterObj={filterObj} />
         </aside>
-        {isLoading ? (
+        {/* {isLoading ? (
           <div className="col-lg-10 col-md-10 col-sm-12 row space-x-container_wrapper_loading">
             {CONSTANTS.content.LOADING}
           </div>
-        ) : null}
+        ) : null} */}
         {missionData && missionData.length ? (
           <div className="col-lg-10 col-md-10 col-sm-12 row space-x-container_wrapper_cards">
             <Cards data={missionData} />
           </div>
         ) : (
-          <div className="col-lg-10 col-md-10 col-sm-12 row space-x-container_wrapper_no-data">
-            {CONSTANTS.content.NO_DATA_AVAILABLE}
-          </div>
-        )}
+            <div className="col-lg-10 col-md-10 col-sm-12 row space-x-container_wrapper_no-data">
+              {CONSTANTS.content.NO_DATA_AVAILABLE}
+            </div>
+          )}
       </div>
       <footer className="row space-x-container_footer">
         <p>{CONSTANTS.content.COPYRIGHT}</p>

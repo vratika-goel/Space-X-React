@@ -31,7 +31,7 @@ const Filter = (props) => {
         setFilterObj={createFilterObj}
       />
       <FilterSection
-        filterHeading={CONSTANTS.content.SUCCESSFUL_LAND_HEADING}
+        filterHeading={CONSTANTS.content.SUCCESSFUL_LAUNCH_HEADING}
         type={BOOLEAN_ARR}
         filterType={CONSTANTS.content.SUCCESSFUL_LAUNCH_ID}
         setFilterObj={createFilterObj}

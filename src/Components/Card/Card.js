@@ -32,7 +32,7 @@ const Card = (props) => {
         {cardData.mission_id.length > 0 && (
           <div className="space-x-card_content_mission-ids">
             <p className="space-x-card_content_mission-ids_text">
-            {CONSTANTS.content.MISSION_IDS}
+              {CONSTANTS.content.MISSION_IDS}
             </p>
             <ul className="space-x-card_content_mission-ids_list">
               {cardData.mission_id.map((item, index) => {
@@ -50,24 +50,24 @@ const Card = (props) => {
         )}
         <div className="space-x-card_content_launch-year">
           <span className="space-x-card_content_launch-year_text">
-          {CONSTANTS.content.LAUNCH_YEAR}
+            {CONSTANTS.content.LAUNCH_YEAR}
           </span>
           <span className="space-x-card_content_launch-year_year">{cardData.launch_year}</span>
         </div>
         <div className="space-x-card_content_successful-launch">
           <span className="space-x-card_content_successful-launch_text">
-          {CONSTANTS.content.SUCCESSFUL_LAUNCH}
+            {CONSTANTS.content.SUCCESSFUL_LAUNCH}
           </span>
           <span className="space-x-card_content_successful-launch_year">
-            {cardData.launch_success.toString()}
+            {cardData.launch_success !== null && cardData.launch_success.toString()}
           </span>
         </div>
         <div className="space-x-card_content_successful-landing">
           <span className="space-x-card_content_successful-landing_text">
-          {CONSTANTS.content.SUCCESSFUL_LAND}
+            {CONSTANTS.content.SUCCESSFUL_LAND}
           </span>
           <span className="space-x-card_content_successful-landing_year">
-            2006
+            {cardData.launch_success !== null && cardData.launch_success.toString()}
           </span>
         </div>
       </div>
